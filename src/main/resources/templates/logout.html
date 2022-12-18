@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LineManager</title>
+    <th:block th:insert="layout/head :: head">
+    </th:block>
+</head>
+
+<body>
+
+    
+        <section class="pt-5" style="overflow: hidden;">
+            <div class="row" style="background: #343434">
+                <div class="col-lg-4 offset-lg-4" style="text-align:center">
+                    <h3>登出確認</h3>
+                </div>
+            </div>
+        </section>
+        <div class="container pt-5">
+
+            <form th:action="@{/perform_logout}" method="post" class="col-lg-4 offset-lg-4">
+                <!-- Email input -->
+                <div class="form-outline mb-4" style="text-align:center">
+
+                    <input type="hidden"  th:name="${_csrf.parameterName}"
+                        th:value="${_csrf.token}" />
+                    <button type="submit" class="btn btn-primary btn-block mb-4">確定要登出嗎？</button>
+
+
+                </div>
+
+
+            </form>
+
+
+
+
+
+
+
+
+        </div>
+        
+        <th:block th:insert="layout/script :: script">
+        </th:block>
+    </body>
+
+    </html>

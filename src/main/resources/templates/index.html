@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+    <th:block th:insert="~{layout/head :: head}">
+    </th:block>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <th:block th:insert="~{layout/nav :: nav}">
+    </th:block>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <th:block th:insert="~{layout/nav :: topnav}">
+                </th:block>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text-dark mb-0">電子平台</h3>
+                    </div>
+                </div>
+            </div>
+            <th:block th:insert="~{layout/footer :: footer}">
+            </th:block>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <th:block th:insert="~{layout/script :: script}">
+    </th:block>
+</body>
+
+</html>

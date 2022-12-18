@@ -1,0 +1,22 @@
+#logging.level.org.springframework= DEBUG
+server:
+    servlet:
+        context-path: /ShihongManager
+
+# For Mariadb connection
+#spring:
+#    datasource:
+#        url: jdbc:mariadb://127.0.0.1:3309/temple?useSSL=false
+#        username: root
+#        password: abc123
+#        driver-class-name: org.mariadb.jdbc.Driver
+#        hikari.minimum-idle: 5
+#        hikari.maximum-pool-size: 12
+
+#    jpa:
+#        properties:
+#            hibernate:
+#                dialect: org.hibernate.dialect.MySQLDialect
+#                id:
+#                    new_generator_mappings: false
+#                format_sql: true 

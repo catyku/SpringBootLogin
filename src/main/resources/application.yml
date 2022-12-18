@@ -1,0 +1,28 @@
+spring:
+    profiles:
+        active: @activatedProperties@
+    security:
+        user:
+            name: eric
+            password: 0129
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html     
+    servlet:
+      multipart:
+        max-file-size: 10240KB
+        max-request-size: 10240KB
+
+  
+server:
+  port : 8081
+  
+
+logging:
+  level.org.springframework.boot.autoconfigure: info #spring的自动装配日志只打error，否则debug输出的会打印很多自动装配的log信息到控制台
+  config: classpath:logback-spring.xml
+
+
+messages:
+  basename: classpath:messages.properties
+  encoding: UTF-8
