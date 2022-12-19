@@ -15,7 +15,7 @@
  *
  */
 
-package com.creations.turnkey.mrpeos.controller;
+package com.izero.eric.login.controller;
 
 import java.awt.image.BufferedImage;
 import java.io.BufferedOutputStream;
@@ -34,9 +34,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.creations.turnkey.mrpeos.constans.Constants;
-import com.creations.turnkey.mrpeos.model.CheckCode;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
+import com.izero.eric.login.constans.Constants;
+import com.izero.eric.login.model.CheckCode;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -62,8 +62,10 @@ public class RootController {
     private DefaultKaptcha defaultKaptcha;
 
     @GetMapping(value = { "/index", "/" })
-    public String index(Principal principal) {
-        String user = principal.getName();
+    public String index(Authentication  authentication) {
+        //System.out.println("123333333");
+        UserModel userDetails = (UserModel)authentication.getPrincipal();
+        String user = userDetails.getName();
         log.info("登入的使用者:"+user);
         return "index";
     }

@@ -1,4 +1,4 @@
-package com.creations.turnkey.mrpeos.service;
+package com.izero.eric.login.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +12,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.stereotype.Service;
 
+import com.izero.eric.login.model.UserModel;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Service
@@ -22,7 +24,7 @@ public class MyUsersDetailService implements UserDetailsService {
 
     
     @Override
-    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
+    public UserModel loadUserByUsername(String s) throws UsernameNotFoundException {
 
         // 權限(固定用法,role是還沒用到所以拿來暫時先隨便亂取）
         List<GrantedAuthority> auths = AuthorityUtils.commaSeparatedStringToAuthorityList("role");
@@ -33,8 +35,8 @@ public class MyUsersDetailService implements UserDetailsService {
         User user = userInfoOpt.orElseThrow(() -> new UsernameNotFoundException("帳號或密碼錯誤!"));
         log.info("根據使用者名稱:{}查詢使用者成功", user.getUsername());
         */
-        log.debug("password encode :"+PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("abc123"));
-        return new User("username", PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("abc123"), auths);
+        //log.debug("password encode :"+PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("abc123"));
+        return new UserModel("username", "123", auths);
 
        
     }
