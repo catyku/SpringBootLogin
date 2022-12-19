@@ -1,4 +1,4 @@
-package com.creations.turnkey.mrpeos.constans;
+package com.izero.eric.login.constans;
 
 public class Constants {
     // Session 中存储图形验证码的属性名

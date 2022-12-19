@@ -1,4 +1,4 @@
-package com.creations.turnkey.mrpeos.configure;
+package com.izero.eric.login.configure;
 
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.impl.DefaultKaptcha;

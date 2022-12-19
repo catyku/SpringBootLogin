@@ -1,4 +1,4 @@
-package com.creations.turnkey.mrpeos.model;
+package com.izero.eric.login.model;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

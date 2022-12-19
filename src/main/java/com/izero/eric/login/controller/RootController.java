@@ -37,6 +37,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.izero.eric.login.constans.Constants;
 import com.izero.eric.login.model.CheckCode;
+import com.izero.eric.login.model.UserModel;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -52,6 +53,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 //import org.springframework.http.server.reactive.S;
+import org.springframework.security.core.Authentication;
 
 @Controller
 @Slf4j

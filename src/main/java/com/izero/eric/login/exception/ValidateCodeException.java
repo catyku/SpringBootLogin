@@ -1,4 +1,4 @@
-package com.creations.turnkey.mrpeos.exception;
+package com.izero.eric.login.exception;
 
 import org.springframework.security.core.AuthenticationException;
 

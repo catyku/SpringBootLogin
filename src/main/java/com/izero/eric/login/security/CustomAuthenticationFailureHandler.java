@@ -1,7 +1,7 @@
-package com.creations.turnkey.mrpeos.security;
+package com.izero.eric.login.security;
 
-import com.creations.turnkey.mrpeos.model.ResultModel;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.izero.eric.login.model.ResultModel;
 
 import jakarta.servlet.ServletException;
 import lombok.extern.slf4j.Slf4j;

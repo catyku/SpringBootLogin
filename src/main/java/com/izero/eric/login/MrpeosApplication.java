@@ -1,4 +1,4 @@
-package com.creations.turnkey.mrpeos;
+package com.izero.eric.login;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

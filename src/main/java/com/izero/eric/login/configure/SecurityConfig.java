@@ -1,4 +1,4 @@
-package com.creations.turnkey.mrpeos.configure;
+package com.izero.eric.login.configure;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -17,7 +17,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.security.web.util.matcher.OrRequestMatcher;
 
-import com.creations.turnkey.mrpeos.security.ImageCodeValidateFilter;
+import com.izero.eric.login.security.ImageCodeValidateFilter;
 
 
 @Configuration
